@@ -1,0 +1,35 @@
+// Site title and caption
+.header{
+	text-transform: uppercase;
+	text-align: right;
+	padding-top: 80px;
+}
+.name {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 5.125em;
+	line-height:100%;
+	color: $palette-pop;
+	margin-bottom: 4px;
+	position: relative;
+	display: inline-block;
+}
+.tagline {
+	font-family: Volkhov, serif;
+	color: #fff;
+	font-size: 1.375em;
+	letter-spacing: .7px;
+	line-height:100%;
+}
+.meteor {
+	float: left;
+	position: absolute;
+	top: -107px;
+	left: -271px;
+}
+hr {
+	margin: 8px 0;
+	display: inline-block;
+}
+hr.above {width: 548px;}
+hr.below {width: 569px;}
+
