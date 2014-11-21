@@ -1,0 +1,16 @@
+.project {
+	margin-bottom: 60px;
+
+	h2 {
+		margin-bottom: 0;
+	}
+	.project-description {
+		@extend .fancy-text;
+	}
+	.project-details {
+		@extend .fancy-text;
+
+		font-style: normal;
+		font-weight: normal;
+	}
+}

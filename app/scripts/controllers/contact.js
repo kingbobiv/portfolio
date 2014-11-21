@@ -2,19 +2,19 @@
 
 /**
  * @ngdoc function
- * @name vpantanoApp.controller:ProjectsCtrl
+ * @name vpantanoApp.controller:ContactCtrl
  * @description
- * # ProjectsCtrl
+ * # ContactCtrl
  * Controller of the vpantanoApp
  */
 angular.module('vpantanoApp')
-  .controller('ProjectsCtrl', function ($scope, sections) {
+  .controller('ContactCtrl', function ($scope, sections) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
 
-    $scope.section = sections.c;
+    $scope.section = sections.b;
 
   });

@@ -1,0 +1,38 @@
+//HEADER STYLES--------------------------
+.site-header{
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 80px;
+}
+
+// Site title
+.name {
+	font-family: $headings-font-family;
+	font-size: 5.125em;
+	line-height:100%;
+	color: $primary-pop-color;
+	margin-bottom: 4px;
+	position: relative;
+	display: inline-block;
+}
+.tagline {
+	@extend .fancy-text;
+	font-weight: normal;
+	font-size: 1.375em;
+	line-height: 100%;
+	font-style: normal;
+}
+.meteor {
+	float: left;
+	position: absolute;
+	top: -107px;
+	left: -271px;
+}
+
+//Tagline Fancy Line Styling
+// hr {
+// 	margin: 8px 0;
+// 	display: inline-block;
+// }
+// hr.above {width: 548px;}
+// hr.below {width: 569px;}

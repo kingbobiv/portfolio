@@ -1,74 +1,24 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 @import "fonts.scss";
 @import "global-styles.scss";
+@import "header.scss";
+@import "footer.scss";
+
+//View styles
+@import "home.scss";
+@import "hello.scss";
+@import "projects";
+@import "contact";
+
+
 
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 
-body {
-  background: url(../images/bg-grid.jpg) repeat 0 0;
-}
-
-.content-wrapper {
-  // width: 768px;
-  background-color: rgba(#090909, 0.3);
-  height:100%;
-}
-
-//HEADER STYLES--------------------------
-.site-header{
-	text-transform: uppercase;
-	text-align: center;
-	padding-top: 80px;
-}
-
-// Site title
-.name {
-	font-family: 'Fjalla One', sans-serif;
-	font-size: 5.125em;
-	line-height:100%;
-	color: $brand-primary;
-	margin-bottom: 4px;
-	position: relative;
-	display: inline-block;
-}
-.tagline {
-	font-family: Volkhov, serif;
-	color: #fff;
-	font-size: 1.375em;
-	letter-spacing: .7px;
-	line-height:100%;
-}
-.meteor {
-	float: left;
-	position: absolute;
-	top: -107px;
-	left: -271px;
-}
-
-//Tagline Fancy Line Styling
-// hr {
-// 	margin: 8px 0;
-// 	display: inline-block;
-// }
-// hr.above {width: 548px;}
-// hr.below {width: 569px;}
 
 
 
 
-//FOOTER STYLES--------------------
-.site-footer {
-	border-top: 1px solid $gray;
-	margin-top: 50px;
-	padding: 20px 0 100px;
 
-	text-align: center;
-	font-family: 'Rock Salt', sans-serif;
-	font-size: 22px;
-}
-.site-footer p:first-of-type {
-	color: $brand-primary;
-}
