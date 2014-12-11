@@ -2,7 +2,7 @@
   'use strict';
 
   /**
-   * @ngdoc function
+   * @ngdoc  service
    * @name vpantanoApp.factory:sections
    * @description
    * # Data for sections
@@ -12,7 +12,9 @@
     .factory('sections', function() {
       var sections = {
 
-
+        //Temporarily labeled sections a,b,c
+        //until I get the ng-repeat to sort
+        //non-alphabetically. convert to array?
         b: {
           urlKey: 'contact',
           title: 'Contact',

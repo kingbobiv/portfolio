@@ -205,10 +205,10 @@ module.exports = function (grunt) {
     filerev: {
       dist: {
         src: [
-          //'<%= yeoman.dist %>/scripts/{,*/}*.js',
-          //'<%= yeoman.dist %>/styles/{,*/}*.css',
-          //'<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-          //'<%= yeoman.dist %>/styles/fonts/*'
+          '<%= yeoman.dist %>/scripts/{,*/}*.js',
+          '<%= yeoman.dist %>/styles/{,*/}*.css',
+          '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+          '<%= yeoman.dist %>/styles/fonts/*'
         ]
       }
     },
@@ -384,6 +384,28 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
+    },
+
+    // Builds out app documentation automatically
+    // ngdocs: {
+    //   options: {
+    //     dest: 'dist/docs',
+    //     scripts: ['app/scripts/app.js'],
+    //     title: 'VPantano Docs',
+    //     image: '../images/project-thumbnails/portfolio.jpg',
+    //     imageLink: 'http://vpantano.com',
+    //     bestMatch: true,
+    //     analytics: {
+    //       account: 'UA-57132846-1',
+    //       domainName: 'vpantano.com'
+    //     }
+    //   }
+    // }
+    ngdocs: {
+      all: ['app/scripts/**/*.js'],
+      options: {
+        dest: 'dist/docs'
+      }
     }
   });
 
@@ -428,9 +450,10 @@ module.exports = function (grunt) {
     'cdnify',
     'cssmin',
     'uglify',
-    'filerev',
+//    'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'ngdocs'
   ]);
 
   grunt.registerTask('default', [
