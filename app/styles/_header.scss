@@ -1,8 +1,10 @@
 //HEADER STYLES--------------------------
 .site-header{
+	position: relative;
+	padding-top: 80px;
+
 	text-transform: uppercase;
 	text-align: center;
-	padding-top: 80px;
 }
 
 // Site title
@@ -23,10 +25,18 @@
 	font-style: normal;
 }
 .meteor {
-	float: left;
 	position: absolute;
-	top: -107px;
-	left: -271px;
+    top: 5px;
+    left: -100px;
+    width: 100px;
+}
+
+@media (min-width: 540px) {
+	.meteor {
+	    top: 24px;
+	    left: -100px;
+	    width: 102px;
+	}
 }
 
 //Tagline Fancy Line Styling
