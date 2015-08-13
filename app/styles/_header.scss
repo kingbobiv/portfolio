@@ -26,10 +26,17 @@
 }
 .meteor {
 	position: absolute;
+    width: 100px;
+    top: -200px;
+    left: -305px;
+}
+.meteor.arrived, .no-js .meteor {
     top: 5px;
     left: -100px;
-    width: 100px;
 }
+
+
+
 
 @media (min-width: 540px) {
 	.meteor {

@@ -9,7 +9,7 @@
    *
    * Main module of the application.
    */
-  angular
+  var vpantanoApp = angular
     .module('vpantanoApp', [
       'ngAnimate',
       'ngCookies',
@@ -40,6 +40,13 @@
           redirectTo: '/'
         });
     });
+
+    vpantanoApp.run(function($rootScope) {
+        $rootScope.globalFoo = function() {
+            alert('I\'m global foo!');
+        };
+    });
+
 
 
 })();
