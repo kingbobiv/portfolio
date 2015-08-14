@@ -1,3 +1,4 @@
+/*global $ */
 (function() {
   'use strict';
 
@@ -42,9 +43,7 @@
     });
 
     vpantanoApp.run(function($rootScope) {
-        $rootScope.globalFoo = function() {
-            alert('I\'m global foo!');
-        };
+        $rootScope.meteor = "arrived";
     });
 
 

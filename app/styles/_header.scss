@@ -26,23 +26,29 @@
 }
 .meteor {
 	position: absolute;
-    width: 100px;
+    width: 75px;
     top: -200px;
     left: -305px;
+
+    transition: all 1s;
 }
-.meteor.arrived, .no-js .meteor {
-    top: 5px;
-    left: -100px;
+.meteor.arrived/*, .no-js .meteor*/ {
+    top: 20px;
+    left: -65px;
 }
 
 
 
 
-@media (min-width: 540px) {
+@media (min-width: 541px) {
 	.meteor {
-	    top: 24px;
-	    left: -100px;
-	    width: 102px;
+	    top: -200px;
+	    left: -300px;
+	    width: 100px;
+	}
+	.meteor.arrived/*, .no-js .meteor*/ {
+	    top: 30px;
+	    left: -90px;
 	}
 }
 
