@@ -119,6 +119,14 @@
               description: 'An ever-improving personal sandbox used primarily to keep myself sharp and try new things.',
               details: 'Recently rebuilt with Angular and Sass, with a blog coming soon',
               thumbnail: '../images/project-thumbnails/portfolio.jpg'
+            },
+            hswindows: {
+              title: 'Home Supply Window & Door',
+              href: 'http://hswindows.com',
+              linkText: 'hswindows.com',
+              description: 'A simple and elegant business page for a local business in need of a web presence.',
+              details: 'Managed the project from concept to launch, including meticulous responsive design considerations, highly modular UI, and user-friendly AJAX forms',
+              thumbnail: 'http://placehold.it/800x500'
             }
           }
         },

@@ -1,4 +1,3 @@
-/*global $ */
 (function() {
   'use strict';
 
@@ -43,7 +42,7 @@
     });
 
     vpantanoApp.run(function($rootScope) {
-        $rootScope.meteor = "arrived";
+        $rootScope.meteor = 'arrived';
     });
 
 
