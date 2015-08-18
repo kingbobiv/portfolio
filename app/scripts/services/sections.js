@@ -126,7 +126,7 @@
               linkText: 'hswindows.com',
               description: 'A simple and elegant business page for a local business in need of a web presence.',
               details: 'Managed the project from concept to launch, including meticulous responsive design considerations, highly modular UI, and user-friendly AJAX forms',
-              thumbnail: 'http://placehold.it/800x500'
+              thumbnail: '../images/project-thumbnails/hswindows.jpg'
             }
           }
         },
