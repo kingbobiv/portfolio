@@ -10,5 +10,5 @@
 angular.module('vpantanoApp')
   .controller('HelloCtrl', function($scope, sections) {
 
-    $scope.section = sections.a;
+    $scope.section = sections.hello;
   });

@@ -10,6 +10,6 @@
 angular.module('vpantanoApp')
   .controller('ProjectsCtrl', function ($scope, sections) {
 
-    $scope.section = sections.c;
+    $scope.section = sections.projects;
 
   });

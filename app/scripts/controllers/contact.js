@@ -10,6 +10,6 @@
 angular.module('vpantanoApp')
   .controller('ContactCtrl', function ($scope, sections) {
 
-    $scope.section = sections.b;
+    $scope.section = sections.contact;
 
   });
