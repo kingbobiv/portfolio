@@ -1,13 +1,23 @@
 .project {
 	margin-bottom: 60px;
 
-	h2 {
+	.title {
 		margin-bottom: 0;
 	}
-	.project-description {
+	.link {
+		margin-bottom: 0;
+	}
+	.date {
+		margin-bottom: 30px;
+
+		font-family: $headings-font-family;
+		text-transform: uppercase;
+	}
+
+	.description {
 		@extend .fancy-text;
 	}
-	.project-details {
+	.details {
 		@extend .fancy-text;
 
 		font-style: normal;

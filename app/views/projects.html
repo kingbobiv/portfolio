@@ -7,10 +7,11 @@
 
 
 	<div class="project" ng-repeat="project in section.projects">
-	  <h2>{{project.title}}</h2>
-	  <a href="{{project.href}}">{{project.linkText}}</a>
-	  <p class="project-description" ng-bind-html="project.description"></p>
-	  <p class="project-details" ng-bind-html="project.details"></p>
-	  <img class="project-thumbnail img-responsive" src="{{project.thumbnail}}" alt="{{project.title}}">
+	  <h2 class="title">{{project.title}}</h2>
+	  <a class="link" href="{{project.href}}">{{project.linkText}}</a>
+	  <p class="date">{{project.date}}</p>
+	  <p class="description" ng-bind-html="project.description"></p>
+	  <p class="details" ng-bind-html="project.details"></p>
+	  <img class="thumbnail img-responsive" src="{{project.thumbnail}}" alt="{{project.title}}">
 	</div>
 </div>
