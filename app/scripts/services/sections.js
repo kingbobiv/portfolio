@@ -12,10 +12,6 @@
     .factory('sections', function() {
       var sections = {
 
-        //Temporarily labeled sections a,b,c
-        //until I get the ng-repeat to sort
-        //non-alphabetically. convert to array?
-
 
         hello: {
           urlKey: 'hello',
