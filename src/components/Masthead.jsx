@@ -3,9 +3,15 @@ import { Box, Heading, Text } from "rebass/styled-components";
 
 export default function Masthead() {
   return (
-    <Box pt={5} textAlign="center">
-      <Heading>Vincent Pantano</Heading>
-      <Text variant="subheading">Developing Solutions for the Modern Web</Text>
+    <Box
+      variant="card"
+      maxWidth="pageWrapper"
+      my={5}
+      mx="auto"
+      textAlign="center"
+    >
+      <Heading variant="display">Vincent Pantano</Heading>
+      <Text variant="heading">Developing Solutions for the Modern Web</Text>
     </Box>
   );
 }

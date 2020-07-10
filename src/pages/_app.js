@@ -3,7 +3,6 @@ import Head from "next/head";
 import { ThemeProvider } from "styled-components";
 import theme from "Styles/theme";
 import GlobalStyles from "Styles/globalStyles";
-import PageContainer from "Components/PageContainer";
 
 export default class MyApp extends App {
   render() {
@@ -18,9 +17,7 @@ export default class MyApp extends App {
         </Head>
         <GlobalStyles />
         <ThemeProvider theme={theme}>
-          <PageContainer>
-            <Component {...pageProps} />
-          </PageContainer>
+          <Component {...pageProps} />
         </ThemeProvider>
       </>
     );

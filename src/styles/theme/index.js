@@ -1,83 +1,109 @@
 const theme = {
-  breakpoints: [600, 900, 1200],
-  space: [0, 4, 8, 16, 32, 64, 128, 256],
-  sizes: {
-    pageMaxWidth: "800px",
-  },
   colors: {
-    primary: "#ffbf00",
-    secondary: "#32d2ff",
-    secondaryDark: "#00b2e5",
-    text: "white",
-    greyScale: "#444",
-    pageContainerBackground: "rgba(9,9,9,.3)",
+    text: "#000",
+    background: "#fff",
+    primary: "#07c",
+    secondary: "#30c",
+    muted: "#f6f6f9",
+    gray: "#dddddf",
+    highlight: "hsla(205, 100%, 40%, 0.125)",
   },
   fonts: {
-    heading: "'Fjalla One', 'sans-serif'",
-    body: "'Roboto', 'sans-serif'",
+    body: "Roboto, system-ui, sans-serif",
+    heading: "'Fjalla One', cursive",
+    monospace: "Menlo, monospace",
   },
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 80],
+  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
   fontWeights: {
     body: 400,
-    heading: 400,
+    heading: 700,
     bold: 700,
   },
-  borders: {
-    thin: "1px solid #444",
+  lineHeights: {
+    body: 1.5,
+    heading: 1.25,
   },
-  borderWidths: {
-    thin: "1px",
-    thick: "2px",
+  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  sizes: {
+    pageWrapper: 600,
+    avatar: 48,
+  },
+  radii: {
+    default: 4,
+    circle: 99999,
   },
   shadows: {
-    card: "-2px 4px 5px 0 black, inset -2px 4px 5px 0 #000",
+    solid: "12px 12px 0 rgba(0, 0, 0, .1)",
   },
-
-  // Variants
+  // rebass variants
   text: {
     heading: {
       fontFamily: "heading",
-      fontSize: 6,
+      lineHeight: "heading",
       fontWeight: "heading",
-      color: "primary",
-      textTransform: "uppercase",
     },
-    subheading: {
-      fontFamily: "body",
-      fontSize: 1,
-      color: "text",
-      textTransform: "uppercase",
+    display: {
+      fontFamily: "heading",
+      fontWeight: "heading",
+      lineHeight: "heading",
+      fontSize: [5, 6, 7],
     },
-    body: {
-      fontFamily: "body",
-      fontWeight: "body",
-      color: "text",
+    caps: {
+      textTransform: "uppercase",
+      letterSpacing: "0.1em",
+    },
+  },
+  variants: {
+    avatar: {
+      width: "avatar",
+      height: "avatar",
+      borderRadius: "circle",
+    },
+    card: {
+      p: 2,
+      bg: "muted",
+      boxShadow: "solid",
     },
     link: {
-      fontFamily: "body",
-      fontWeight: "inherit",
-      color: "secondary",
-      "&:hover": {
-        color: "secondaryDark",
-        textDecoration: "underline",
+      color: "primary",
+    },
+    nav: {
+      fontSize: 1,
+      fontWeight: "bold",
+      display: "inline-block",
+      p: 2,
+      color: "inherit",
+      textDecoration: "none",
+      ":hover,:focus,.active": {
+        color: "primary",
       },
     },
   },
-  buttons: {},
-  variants: {
-    card: {
-      p: 4,
-      borderWidth: "thick",
-      borderColor: "border",
-      borderStyle: "solid",
-      boxShadow: "card",
-      "&:hover": {
-        borderColor: "primary",
-      },
-      active: {
-        variant: "card",
-        borderColor: "primary",
-      },
+  buttons: {
+    primary: {
+      fontSize: 2,
+      fontWeight: "bold",
+      color: "background",
+      bg: "primary",
+      borderRadius: "default",
+    },
+    outline: {
+      variant: "buttons.primary",
+      color: "primary",
+      bg: "transparent",
+      boxShadow: "inset 0 0 2px",
+    },
+    secondary: {
+      variant: "buttons.primary",
+      color: "background",
+      bg: "secondary",
+    },
+  },
+  styles: {
+    root: {
+      fontFamily: "body",
+      fontWeight: "body",
+      lineHeight: "body",
     },
   },
 };
