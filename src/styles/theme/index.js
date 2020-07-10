@@ -23,9 +23,14 @@ const theme = {
     body: 1.5,
     heading: 1.25,
   },
+  breakpoints: ["600px", "900px", "1200px", "1600px"],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   sizes: {
-    pageWrapper: 600,
+    pageWrapper: {
+      sm: 600,
+      md: 900,
+      lg: 1200,
+    },
     avatar: 48,
   },
   radii: {
@@ -41,6 +46,11 @@ const theme = {
       fontFamily: "heading",
       lineHeight: "heading",
       fontWeight: "heading",
+    },
+    body: {
+      fontFamily: "body",
+      lineHeight: "body",
+      fontWeight: "body",
     },
     display: {
       fontFamily: "heading",
@@ -60,7 +70,7 @@ const theme = {
       borderRadius: "circle",
     },
     card: {
-      p: 2,
+      p: 3,
       bg: "muted",
       boxShadow: "solid",
     },
