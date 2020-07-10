@@ -7,13 +7,19 @@
     "start": "next start -p $PORT"
   },
   "dependencies": {
+    "@rebass/preset": "^4.0.5",
     "next": "latest",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
+    "rebass": "^4.0.7",
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.8.0"
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-styled-components": "^1.8.0",
+    "eslint": "^7.3.1",
+    "eslint-config-prettier": "6.11.0",
+    "prettier": "2.0.5"
   },
   "license": "ISC"
 }
