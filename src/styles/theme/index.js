@@ -10,7 +10,7 @@ const theme = {
   },
   fonts: {
     body: "Roboto, system-ui, sans-serif",
-    heading: "'Fjalla One', cursive",
+    heading: "'Fjalla One', serif",
     monospace: "Menlo, monospace",
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
@@ -56,7 +56,6 @@ const theme = {
       fontFamily: "heading",
       fontWeight: "heading",
       lineHeight: "heading",
-      fontSize: [5, 6, 7],
     },
     caps: {
       textTransform: "uppercase",
