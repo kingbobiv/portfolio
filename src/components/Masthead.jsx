@@ -10,8 +10,10 @@ export default function Masthead() {
     <>
       <Box maxWidth="pageWrapper.lg" my="5" mx={"auto"} px={4}>
         <Box variant="card" textAlign="center">
-          <Heading variant="display">👋 Vincent Pantano</Heading>
-          <Text as="div" variant="heading">
+          <Heading variant="display" fontSize={[5, 6, 7]}>
+            👋 Vincent Pantano
+          </Heading>
+          <Text as="div" variant="heading" fontSize={[2, 3]}>
             Developing Solutions for the Modern Web
           </Text>
         </Box>
