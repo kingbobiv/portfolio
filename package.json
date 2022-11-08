@@ -9,7 +9,7 @@
   "dependencies": {
     "@rebass/preset": "^4.0.5",
     "markdown-to-jsx": "^6.11.4",
-    "next": "^9.4.4",
+    "next": "^13.0.2",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-timer-hook": "^2.0.2",
